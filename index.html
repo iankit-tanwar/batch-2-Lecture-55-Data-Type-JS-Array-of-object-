@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch 2 Lecture 55 Data Type(JS Array)</title>
+
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+
+    <h1 data-myheading="abc"></h1>
+
+    <h1 id="news1"></h1>
+    <p class="n1p1"></p>
+    <h1 id="news2"></h1>
+    <p class="n2p2"></p>
+
+
+
+    <script>
+
+
+        let students = ['Anil', "bhanu", ` Todays News `]; //Js Array
+
+        //arrayName[indexNumber]
+        // array index number always start with 0
+
+        console.log('hello ' + students[0]); // Concatination operators
+
+        //2 way to see js output
+
+        //alert('hello "' + students[1] + '"');
+
+        //3 way to see output
+        let x = document.querySelector('h1[data-myheading="abc"]');
+
+        // i want to follow dry principal
+
+        x.innerHTML = students[2];
+
+
+
+
+        // news assignment with Javascript array of object
+
+
+        let $news = [{
+            n1h1: "Babita Phogat's sharp reaction after Sakshi Malik, husband's sensational claim",
+            n1p1: 'Commonwealth Games gold medallist and BJP leader Babita Phogat on Sunday hit back at Sakshi Malik and her wrestler-husband Satyawart Kadianon, a day after they made a sensational claim over the permission for the sit-in protest at Jantar Mantar for the first time in January. Babita described them “a puppet in the hands of the Congress'
+        }, {
+
+            n2h2 :"Russia-Ukraine signed peace treaty, Vladimir Putin says. Then, shows document",
+            n2p2: 'The meet included leaders from South Africa, Senegal, Egypt, Zambia, Uganda, Congo Republic, and the Comoro Islands.s'
+        }]// array of object
+
+
+        let y = document.getElementById('news1');
+        y.innerHTML = $news[0].n1h1;
+      
+        document.querySelector('.n1p1').innerHTML = $news[0].n1p1;
+
+        let z = document.getElementById('news2');
+        z.innerHTML = $news[1].n2h2;
+
+
+        document.querySelector('.n2p2').innerHTML = $news[1].n2p2;
+
+    </script>
+
+</body>
+
+</html>
